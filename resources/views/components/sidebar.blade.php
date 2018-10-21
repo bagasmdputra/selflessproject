@@ -1,0 +1,34 @@
+<!-- Sidebar Menu -->
+<div class="sidebar-menu">
+    <div class="sidembar-menu-wrap">
+        <a href="javascript:void(0)" class="sidebar-close-icon icon--close">
+            <i class="ion ion-android-close"></i>
+        </a>
+        <!--Sidebar Content-->
+        <div class="sidebar-content">
+            <h5 class="white">Sign In</h5>
+            <form role="search" id="searchform" action="/search" method="get" class="sign-in">
+                <input class="input-sm form-full" type="email" aria-required="true" id="email" name="email" placeholder="Email"
+                    value="" />
+                <input class="input-sm form-full" type="password" aria-required="true" id="password" name="password"
+                    placeholder="Password" value="" />
+                <input type="submit" class="btn btn-md btn-color-b form-full" value="Sign In" />
+                <a>New Customer?</a>
+            </form>
+            <ul>
+                <li><a class="all-demos-link" target="_blank" href="../demo.html">Main Demo Page</a></li>
+                <li><a href="home.html">Home Default</a></li>
+                <li><a href="portfolio-grid-2col.html">Portfolio</a></li>
+                <li><a href="login-register.html">Login & Signup</a></li>
+                <li><a href="faq-1.html">FAQ</a></li>
+                <li><a href="about-1.html">About</a></li>
+                <li><a href="service-1.html">Service</a></li>
+                <li><a href="blog-grid-3col.html">Blog</a></li>
+                <li><a href="404-error-1.html">404 Error</a></li>
+                <li><a href="shop-checkout.html">Shopping Cart</a></li>
+                <li><a href="contact-1.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Sidebar Menu -->
