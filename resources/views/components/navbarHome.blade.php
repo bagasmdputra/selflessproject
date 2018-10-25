@@ -6,7 +6,7 @@
             <div class="row d-flex flex-md-row align-items-center">
                 <div class="logo mr-auto">
                     <!--logo-->
-                    <a href="index.html">
+                    <a href="/">
                         <img class="logo-dark" src="img/logo-black.png" alt="Mazel" />
                         <img class="logo-light" src="img/logo-white.png" alt="Mazel" />
                     </a>
@@ -63,7 +63,7 @@
                             </div>
                         </li>
                         <li class="nav-menu-item">
-                            <a href="#">Blog</a>
+                            <a href="{{ route('blog') }}">Blog</a>
 
                         </li>
                         <li class="nav-menu-item">
@@ -114,7 +114,7 @@
                                 <br>
                                 <h1 class="h1">Selfless Massage</h1>
                                 <br>
-                                <div><a class="btn btn-md btn-white-line xs-hidden">Read More</a><span class="btn-space-10 xs-hidden"></span><a class="btn btn-md btn-white">Learn More</a></div>
+                                <div><a class="btn btn-md btn-white-line xs-hidden" href="{{ route('blog') }}">Read Our Blog</a><span class="btn-space-10 xs-hidden"></span><a class="btn btn-md btn-white">Book Now</a></div>
                             </div>
                         </div>
                     </div>

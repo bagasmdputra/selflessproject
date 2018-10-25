@@ -6,7 +6,7 @@
             <div class="row d-flex flex-md-row align-items-center">
                 <div class="logo mr-auto">
                     <!--logo-->
-                    <a href="index.html">
+                    <a href="/">
                         <img class="logo-dark" src="img/logo-black.png" alt="Mazel" />
                         <img class="logo-light" src="img/logo-white.png" alt="Mazel" />
                     </a>
@@ -63,7 +63,7 @@
                             </div>
                         </li>
                         <li class="nav-menu-item">
-                            <a href="#">Blog</a>
+                        <a href="{{ route('blog') }} }}">Blog</a>
 
                         </li>
                         <li class="nav-menu-item">

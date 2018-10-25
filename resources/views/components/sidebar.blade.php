@@ -16,17 +16,12 @@
                 <a>New Customer?</a>
             </form>
             <ul>
-                <li><a class="all-demos-link" target="_blank" href="../demo.html">Main Demo Page</a></li>
-                <li><a href="home.html">Home Default</a></li>
-                <li><a href="portfolio-grid-2col.html">Portfolio</a></li>
-                <li><a href="login-register.html">Login & Signup</a></li>
-                <li><a href="faq-1.html">FAQ</a></li>
-                <li><a href="about-1.html">About</a></li>
-                <li><a href="service-1.html">Service</a></li>
-                <li><a href="blog-grid-3col.html">Blog</a></li>
-                <li><a href="404-error-1.html">404 Error</a></li>
-                <li><a href="shop-checkout.html">Shopping Cart</a></li>
-                <li><a href="contact-1.html">Contact Us</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Pricing</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
             </ul>
         </div>
     </div>
