@@ -1,0 +1,7 @@
+.logo a{
+    height: 50px;
+}
+
+.fixed .logo a {
+    height: 40px;
+}

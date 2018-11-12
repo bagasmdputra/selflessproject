@@ -7,7 +7,7 @@
                 <div class="col-lg-3 col-md-12 col-sm-12">
                     <div class="footer-block">
                         <a class="footer-logo mb-25" href="home.html">
-                            <img src="img/logo-black.png" />
+                            <img src="{{ asset('img/logo-black.png') }}" />
                         </a>
                         <p>Anda dapat menghubungi kami kapan pun dan kami siap melayani Anda. Ikuti media sosial kami untuk mendapatkan berita terbaru tentang kami</p>
                         <ul class="social">

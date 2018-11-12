@@ -7,20 +7,20 @@
                 <div class="logo mr-auto">
                     <!--logo-->
                     <a href="/">
-                        <img class="logo-dark" src="img/logo-black.png" alt="Mazel" />
-                        <img class="logo-light" src="img/logo-white.png" alt="Mazel" />
+                        <img class="logo-dark" src="{{ asset('img/logo-black.png') }}" alt="Mazel" />
+                        <img class="logo-light" src="{{ asset('img/logo-white.png') }}" alt="Mazel" />
                     </a>
                     <!--End logo-->
                 </div>
 
                 <div class="nav-menu ml-auto">
-                    <ul class="">
+                    <ul  class="">
                         <li class="nav-menu-item">
                             <a href="/">Home</a>
                         </li>
                         <li class="nav-menu-item">
-                            <a href="#">Services</a>
-                            <div class="nav-dropdown">
+                            <a href="{{ route('services')}}">Services</a>
+                            {{-- <div class="nav-dropdown">
                                 <ul>
 
                                     <li class="nav-menu-item">
@@ -42,9 +42,9 @@
                                     <li><a href="pricing.html">Book instantly</a></li>
 
                                 </ul>
-                            </div>
+                            </div> --}}
                         </li>
-                        <li class="nav-menu-item">
+                        {{-- <li class="nav-menu-item">
                             <a href="#">Pricing</a>
                             <div class="nav-dropdown">
                                 <ul>
@@ -61,18 +61,25 @@
 
                                 </ul>
                             </div>
-                        </li>
+                        </li> --}}
                         <li class="nav-menu-item">
-                        <a href="{{ route('blog') }} }}">Blog</a>
+                        <a href="{{ route('blog')}}">Blog</a>
 
                         </li>
                         <li class="nav-menu-item">
-                            <a href="#">About</a>
+                            <a href="{{ route('about')}}">About</a>
 
                         </li>
                         <li class="nav-menu-item">
-                            <a href="#">Contact</a>
+                            <a href="{{ route('contact')}}">Contact</a>
 
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="{{ route('testimonials')}}">Testimonials</a>
+
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="{{ route('login')}}">Login/Register</a>
                         </li>
                     </ul>
                 </div>
@@ -81,11 +88,7 @@
                         <span class="nav-icon-trigger menu-mobile-btn align-middle"><i class="ion"></i></span>
                     </div>
 
-
-                    <div class="nav-icon-item">
-                        <span class="nav-icon-trigger sidebar-menu_btn align-middle"><i class="ion ion-navicon"></i></span>
-                    </div>
-
+                    
                 </div>
             </div>
         </div>

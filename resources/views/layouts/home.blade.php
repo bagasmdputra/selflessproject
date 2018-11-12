@@ -15,7 +15,7 @@
 
     {{--Title and Meta--}}
     <title>
-        @yield('title') - Selfless Massage
+        @yield('title') -    Selfless Massage
     </title>
 
     {{--Common App Styles--}}
@@ -34,7 +34,9 @@
     <link href="{{ asset('css/jquery-ui.css') }}" rel="stylesheet" type="text/css" />
 
     <!-- SLIDER REVOLUTION CSS SETTINGS -->
-    <link href="plugin/rs-plugin/css/settings.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="{{ asset('plugin/rs-plugin/css/settings.css') }}" rel="stylesheet" type="text/css" media="screen" />
+
+    <link href="{{ asset('css/global-custom.css') }}" rel="stylesheet" type="text/css" />
 
     @yield('styles')
 
@@ -71,27 +73,29 @@
 
     @endcomponent
     {{--Laravel Js Variables--}}
-    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="{{ asset('js/jquery-1.11.2.min.js') }}" type="text/javascript"></script>
 
-    <script src="js/plugin/jquery.easing.js" type="text/javascript"></script>
-    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/plugin/jquery.flexslider.js" type="text/javascript"></script>
-    <script src="js/plugin/jquery.fitvids.js" type="text/javascript"></script>
-    <script src="js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
-    <script src="js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
-    <script src="js/plugin/wow.min.js" type="text/javascript"></script>
-    <script src="js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
-    <script src="js/plugin/owl.carousel.min.js" type="text/javascript"></script>
-    <script src="js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
-    <script src="js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
-    <script src="js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-    <script src="js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
-    <script src="js/plugin/mediaelement-and-player.min.js"></script>
-    <script src="js/theme.js" type="text/javascript"></script>
-    <script src="js/plugin/TweenLite.min.js" type="text/javascript"></script>
-    <script src="js/plugin/EasePack.min.js" type="text/javascript"></script>
-    <script src="js/plugin/pollyfill.js" type="text/javascript"></script>
+    <script src="{{ asset('js/plugin/jquery.easing.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/jquery-ui.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/plugin/jquery.flexslider.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/plugin/jquery.fitvids.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/plugin/jquery.viewportchecker.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/plugin/jquery.stellar.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/plugin/wow.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/plugin/jquery.colorbox-min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/plugin/owl.carousel.min.js') }}" type="text/javascript"></script>
+    <!-- SLIDER REVOLUTION SCRIPTS  -->
+    <script src="{{ asset('plugin/rs-plugin/js/jquery.themepunch.tools.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('plugin/rs-plugin/js/jquery.themepunch.revolution.min.js') }}" type="text/javascript"></script>
+    <!-- End SLIDER REVOLUTION SCRIPTS  -->
+    <script src="{{ asset('js/plugin/isotope.pkgd.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/plugin/masonry.pkgd.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/plugin/imagesloaded.pkgd.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/plugin/jquery.fs.tipper.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/plugin/mediaelement-and-player.min.js') }}"></script>
+    <script src="{{ asset('js/revolution-slider.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/theme.js') }}" type="text/javascript"></script>
 
     {{--Scripts--}}
     @yield('scripts')

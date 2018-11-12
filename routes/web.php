@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 
 Route::group(['prefix' => 'services'], function () {
-    Route::get('/', 'BlogController@index')->name('services');
+    Route::get('/', 'ServiceController@index')->name('services');
     Route::get('/event/{id}', 'BlogController@index')->name('service.event');   
     Route::get('/massage', 'BlogController@index')->name('service.massage');   
     Route::get('/book', 'BlogController@index')->name('service.book');   
@@ -34,14 +34,15 @@ Route::group(['prefix' => 'pricing'], function () {
 
 Route::group(['prefix' => 'blog'], function () {
     Route::get('/', 'BlogController@index')->name('blog');
-    Route::get('/posts/feed', 'BlogFeedController@index')->name('posts.feed');
+    Route::get('/{post}', ['uses' =>'BlogController@show'])->name('post');
     // Route::resource('posts', 'BlogController')->only('show');
     // Route::resource('users', 'UserController')->only('show');   
 });
 
-Route::get('/about', 'BlogController@index')->name('about');   
+Route::get('/about', 'PageController@about')->name('about');   
 Route::get('/contact', 'BlogController@index')->name('contact');   
-
+Route::get('/testimonials', 'PageController@testimonials')->name('testimonials'); 
+Route::get('/login', 'PageController@login')->name('login');   
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

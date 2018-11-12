@@ -1,24 +1,37 @@
 @extends('layouts.app')
 
+@section('title', 'Blog')
+
+
+
 @section('content')
+@include('components.banner',['pagename' => "Our Blog", 'imgurl' => "img/full/02.jpg", 'page' => "Blog"])
+<section class="ptb ptb-sm-80">
+  <div class="container">
+      <!-- Post Item -->
+      <div class="row masonry">
 
-  {{-- @include ('posts/_search_form') --}}
+          @foreach ($posts as $post)
+              @include('components.imagepost',['post' => $post])
+          @endforeach
 
-  <div class="d-flex justify-content-between">
-    {{-- <div class="p-2">
-      @if (request()->has('q'))
-        <h2>{{ trans_choice('posts.search_results', $posts->count(), ['query' => request()->input('q')]) }}</h2>
-      @else
-        <h2>@lang('posts.last_posts')</h2>
-      @endif
-    </div>
 
-    <div class="p-2">
-      <a href="{{ route('posts.feed') }}" class="pull-right" data-turbolinks="false">
-          <i class="fa fa-rss" aria-hidden="true"></i>
-      </a>
-    </div> --}}
+      </div>
+      <!-- End Post Item -->
+
+      <!-- Pagination Nav -->
+      {{ $posts->links() }}
+      {{-- <div class="pagination-nav mt-60 mt-xs-30">
+          <ul>
+              <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+          </ul>
+      </div> --}}
+      <!-- End Pagination Nav -->
   </div>
+</section>
 
-  {{-- @include ('posts/_list') --}}
 @endsection
